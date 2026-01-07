@@ -23,7 +23,6 @@ variable "components" {
       }
       mongodb   = { ports = { ssh = 22, mongodb = 27017 }
         instance_type  = "t3.micro"
-        root_volume_size = 20
       }
       catalogue = { ports = { ssh = 22, app = 8080 }
         instance_type  = "t3.micro"
@@ -31,7 +30,6 @@ variable "components" {
       }
       redis     = { ports = { ssh = 22, redis = 6379 }
         instance_type  = "t3.micro"
-        root_volume_size = 20
       }
       user      = { ports = { ssh = 22, app = 8080 }
         instance_type  = "t3.micro"
@@ -43,7 +41,6 @@ variable "components" {
       }
       mysql     = { ports = { ssh = 22, mysql = 3306 }
         instance_type  = "t3.micro"
-        root_volume_size = 20
       }
       shipping  = { ports = { ssh = 22, app = 8080 }
         instance_type  = "t3.micro"
@@ -51,7 +48,6 @@ variable "components" {
       }
       rabbitmq  = { ports = { ssh = 22, rabbitmq = 5672 }
         instance_type  = "t3.micro"
-        root_volume_size = 20
       }
       payment   = { ports = { ssh = 22, app = 8080 }
         instance_type  = "t3.micro"

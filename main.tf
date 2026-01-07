@@ -5,7 +5,7 @@ resource "aws_instance" "instance" {
   vpc_security_group_ids = var.vpc_security_group_ids
 
   root_block_device  {
-    volume_size = each.value["root_volume_size"] # lookup(each.value,"root_volume_size",20)
+    volume_size = lookup(each.value,"root_volume_size",20)
   }
 
   tags = {
