@@ -57,9 +57,5 @@ variable "components" {
         instance_type  = "t3.micro"
         root_volume_size = 25
       }
-      dispatch  = { ports = { ssh = 22, app = 8080 }
-        instance_type  = "t3.micro"
-        root_volume_size = 25
-      }
     }
 }
