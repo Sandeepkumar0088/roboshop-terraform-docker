@@ -42,10 +42,10 @@ variable "components" {
       mysql     = { ports = { ssh = 22, mysql = 3306 }
         instance_type  = "t3.micro"
       }
-      # shipping  = { ports = { ssh = 22, app = 8080 }
-      #   instance_type  = "t3.micro"
-      #   root_volume_size = 25
-      # }
+      shipping  = { ports = { ssh = 22, app = 8080 }
+        instance_type  = "t3.micro"
+        root_volume_size = 25
+      }
       rabbitmq  = { ports = { ssh = 22, rabbitmq = 5672 }
         instance_type  = "t3.micro"
       }
